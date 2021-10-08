@@ -1,24 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="comixheavy.ttf">
+            <string>ComixHeavy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DuckHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky.png" translatesAutoresizingMaskIntoConstraints="NO" id="Km8-lS-etp">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hills.png" translatesAutoresizingMaskIntoConstraints="NO" id="I5R-Gm-ECt">
+                                <rect key="frame" x="0.0" y="41.333333333333343" width="896" height="372.66666666666663"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mediumcloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="KlR-gi-qKE">
+                                <rect key="frame" x="75" y="104" width="103" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallcloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="oZS-4d-5fY">
+                                <rect key="frame" x="614" y="-17" width="153" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grass.png" translatesAutoresizingMaskIntoConstraints="NO" id="VCv-Jm-v32">
+                                <rect key="frame" x="0.0" y="334" width="896" height="80"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="largecloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dzq-lO-sxj">
+                                <rect key="frame" x="268" y="0.0" width="153" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duckfly_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="lAq-ct-1X5" customClass="Duck" customModule="DuckHunt" customModuleProvider="target">
+                                <rect key="frame" x="223" y="64" width="30" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duckfly_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="UyN-C2-hqg" customClass="Duck" customModule="DuckHunt" customModuleProvider="target">
+                                <rect key="frame" x="661" y="66" width="29" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duckfly_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Goj-Wt-5Hg" customClass="Duck" customModule="DuckHunt" customModuleProvider="target">
+                                <rect key="frame" x="426" y="104" width="35" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duckfly_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="OEy-rn-LHT" customClass="Duck" customModule="DuckHunt" customModuleProvider="target">
+                                <rect key="frame" x="178" y="154" width="47" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel.png" translatesAutoresizingMaskIntoConstraints="NO" id="lQK-BI-X15">
+                                <rect key="frame" x="435.66666666666669" y="334" width="25" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="AXu-A2-Ij8"/>
+                                    <constraint firstAttribute="height" constant="180" id="vlW-mJ-Hnf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="duckfly_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="qUG-1S-0eB" customClass="Duck" customModule="DuckHunt" customModuleProvider="target">
+                                <rect key="frame" x="60" y="20" width="53" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crosshairs.png" translatesAutoresizingMaskIntoConstraints="NO" id="LLb-Jf-s0K">
+                                <rect key="frame" x="434" y="193" width="27" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="575-yk-b6g">
+                                <rect key="frame" x="25" y="20" width="91" height="25"/>
+                                <fontDescription key="fontDescription" name="ComixHeavy" family="Comix Heavy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:60" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yay-FW-ZB4">
+                                <rect key="frame" x="781.66666666666663" y="20" width="89.333333333333371" height="25"/>
+                                <fontDescription key="fontDescription" name="ComixHeavy" family="Comix Heavy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jd-pR-SCG">
+                                <rect key="frame" x="384" y="183" width="128" height="48"/>
+                                <state key="normal" backgroundImage="startbutton.png"/>
+                                <connections>
+                                    <action selector="ganeRestart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ykb-8X-y1j"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="575-yk-b6g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="12a-5e-aC2"/>
+                            <constraint firstAttribute="bottom" secondItem="I5R-Gm-ECt" secondAttribute="bottom" id="6IE-iC-YOs"/>
+                            <constraint firstAttribute="trailing" secondItem="VCv-Jm-v32" secondAttribute="trailing" id="6hZ-9R-Zye"/>
+                            <constraint firstItem="Km8-lS-etp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CHR-58-gbG"/>
+                            <constraint firstItem="9jd-pR-SCG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eo6-2g-zRS"/>
+                            <constraint firstItem="Km8-lS-etp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EpV-By-pxE"/>
+                            <constraint firstAttribute="bottom" secondItem="lQK-BI-X15" secondAttribute="bottom" constant="-100" id="IMC-1J-Ezi"/>
+                            <constraint firstItem="9jd-pR-SCG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IbY-Ij-byB"/>
+                            <constraint firstItem="575-yk-b6g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="P4f-MX-4Pf"/>
+                            <constraint firstItem="I5R-Gm-ECt" firstAttribute="height" secondItem="Km8-lS-etp" secondAttribute="height" multiplier="0.9" id="QYW-Mv-tqZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Km8-lS-etp" secondAttribute="bottom" id="aCa-bl-UEc"/>
+                            <constraint firstAttribute="trailing" secondItem="I5R-Gm-ECt" secondAttribute="trailing" id="cJo-rL-ctZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Km8-lS-etp" secondAttribute="trailing" id="ePA-q7-tFB"/>
+                            <constraint firstItem="lQK-BI-X15" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eWb-Hi-wf2"/>
+                            <constraint firstItem="VCv-Jm-v32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fUz-hb-7bP"/>
+                            <constraint firstItem="I5R-Gm-ECt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fbh-0Y-Kyl"/>
+                            <constraint firstAttribute="trailing" secondItem="Yay-FW-ZB4" secondAttribute="trailing" constant="25" id="oIy-7x-Gaw"/>
+                            <constraint firstAttribute="bottom" secondItem="VCv-Jm-v32" secondAttribute="bottom" id="uTZ-vx-u3u"/>
+                            <constraint firstItem="Yay-FW-ZB4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xUq-As-E8I"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="L2G-2v-Se2" appends="YES" id="Raf-iQ-s88"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="gun" destination="lQK-BI-X15" id="tZS-Nb-Xkb"/>
+                        <outlet property="restartBtn" destination="9jd-pR-SCG" id="fdU-cl-q6M"/>
+                        <outlet property="score" destination="575-yk-b6g" id="oqD-gE-6mv"/>
+                        <outlet property="shortCenter" destination="LLb-Jf-s0K" id="xck-UI-DwK"/>
+                        <outlet property="timeLabel" destination="Yay-FW-ZB4" id="mTQ-am-evr"/>
+                        <outletCollection property="AllDucks" destination="UyN-C2-hqg" collectionClass="NSMutableArray" id="0d8-0e-SyG"/>
+                        <outletCollection property="AllDucks" destination="Goj-Wt-5Hg" collectionClass="NSMutableArray" id="Z3s-27-D4V"/>
+                        <outletCollection property="AllDucks" destination="OEy-rn-LHT" collectionClass="NSMutableArray" id="hBo-9I-51n"/>
+                        <outletCollection property="AllDucks" destination="lAq-ct-1X5" collectionClass="NSMutableArray" id="sQi-Q8-MI7"/>
+                        <outletCollection property="AllDucks" destination="qUG-1S-0eB" collectionClass="NSMutableArray" id="iPV-G6-k2N"/>
+                        <outletCollection property="Allcloud" destination="Dzq-lO-sxj" collectionClass="NSMutableArray" id="kAb-0f-T0k"/>
+                        <outletCollection property="Allcloud" destination="KlR-gi-qKE" collectionClass="NSMutableArray" id="gQ5-up-aZn"/>
+                        <outletCollection property="Allcloud" destination="oZS-4d-5fY" collectionClass="NSMutableArray" id="1Rp-0T-pHL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="L2G-2v-Se2">
+                    <connections>
+                        <action selector="clickBirdAction:" destination="BYZ-38-t0r" id="AyT-Ul-EKv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-260.49107142857144" y="198.55072463768118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="barrel.png" width="48" height="336"/>
+        <image name="crosshairs.png" width="80" height="80"/>
+        <image name="duckfly_01.png" width="70" height="57"/>
+        <image name="grass.png" width="800" height="80"/>
+        <image name="hills.png" width="800" height="304"/>
+        <image name="largecloud.png" width="240" height="64"/>
+        <image name="mediumcloud.png" width="128" height="32"/>
+        <image name="sky.png" width="800" height="336"/>
+        <image name="smallcloud.png" width="48" height="32"/>
+        <image name="startbutton.png" width="128" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
